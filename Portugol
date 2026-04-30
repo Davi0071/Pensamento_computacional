@@ -1,0 +1,34 @@
+programa {
+função início() {
+
+    cadeia nome
+    cadeia alunos[5]
+    inteiro i
+    logico encontrado
+
+    alunos[0] = "Ana"
+    alunos[1] = "Davi"
+    alunos[2] = "Jessica"
+    alunos[3] = "Gabi"
+    alunos[4] = "Joao"
+
+    escreva("Digite o nome do aluno: ")
+    leia(nome)
+
+    encontrado = falso
+
+    para (i = 0; i < 5; i++) {
+        se (nome == alunos[i]) {
+            encontrado = verdadeiro
+        }
+    }
+
+    se (encontrado) {
+        escreva("Entrada autorizada\n")
+    } senao {
+        escreva("Entrada negada - aluno não encontrado\n")
+    }
+
+}
+}
+
