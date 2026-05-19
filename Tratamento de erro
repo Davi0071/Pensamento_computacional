@@ -91,3 +91,93 @@ Evento esgotado.
 Dados preenchidos incorretamente.
 
 Um algoritmo computacional normalmente considera condições e decisões.
+
+ATIVIDADE CORRIGIDA
+
+Pensamento Computacional Aplicado
+1. Decomposição
+
+A decomposição consiste em dividir um problema complexo em partes menores e mais simples de serem compreendidas e executadas.
+
+O processo de compra de ingressos foi dividido nas seguintes etapas:
+
+Acessar a plataforma de venda de ingressos.
+Realizar login ou cadastro na plataforma.
+Pesquisar e selecionar o evento desejado.
+Escolher a quantidade de ingressos.
+Selecionar setor ou assento (quando disponível).
+Confirmar os dados da compra.
+Escolher a forma de pagamento.
+Realizar o pagamento.
+Receber a confirmação da compra.
+Visualizar ou baixar o ingresso digital.
+
+2. Reconhecimento de Padrões
+
+O reconhecimento de padrões permite identificar características e procedimentos que se repetem em diferentes sistemas.
+
+Autenticação de usuários por login e senha.
+Pesquisa e seleção de produtos ou serviços.
+Preenchimento e validação de dados.
+Escolha de métodos de pagamento.
+Confirmação automática da transação.
+Emissão de comprovantes e documentos digitais.
+
+Esses padrões são comuns em plataformas de comércio eletrônico, aplicativos de serviços e sistemas digitais de pagamento.
+
+3. Abstração
+
+A abstração consiste em focar apenas nas informações relevantes para resolver o problema, ignorando detalhes desnecessários.
+
+Neste projeto foram consideradas apenas as etapas essenciais para a compra do ingresso, desconsiderando elementos como:
+
+Desbloqueio do celular.
+Abertura do navegador.
+Configurações do dispositivo.
+Notificações do sistema.
+
+O foco permanece exclusivamente nas ações necessárias para concluir a aquisição do ingresso.
+
+4. Algoritmo
+
+A sequência lógica das ações pode ser representada pelo seguinte algoritmo:
+INÍCIO
+
+Acessar a plataforma de ingressos
+
+SE usuário não possuir cadastro
+    Realizar cadastro
+SENÃO
+    Fazer login
+FIMSE
+
+Pesquisar evento desejado
+
+SE houver ingressos disponíveis
+    Selecionar quantidade de ingressos
+    Escolher assento ou setor (quando disponível)
+    Confirmar compra
+    Selecionar forma de pagamento
+    Efetuar pagamento
+
+    SE pagamento aprovado
+        Exibir confirmação da compra
+        Disponibilizar ingresso digital
+    SENÃO
+        Informar falha no pagamento
+    FIMSE
+
+SENÃO
+    Informar indisponibilidade de ingressos
+FIMSE
+
+FIM
+
+CONCLUSÃO
+
+A aplicação do pensamento computacional permitiu transformar o processo de compra de ingressos online
+em uma sequência organizada de etapas, facilitando sua análise e representação.
+Por meio da decomposição, abstração, reconhecimento de padrões e elaboração de algoritmos, foi possível 
+compreender melhor o funcionamento do sistema e identificar como problemas do cotidiano podem ser modelados
+de maneira lógica e estruturada. Essa abordagem demonstra a importância do pensamento computacional
+na resolução de problemas e no desenvolvimento de soluções tecnológicas eficientes.
