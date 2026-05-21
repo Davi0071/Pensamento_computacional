@@ -1,41 +1,91 @@
-"Entrega Projeto Aula – Pensamento Computacional para Sistemas de Larga Escala"
+1. Problema na Decomposição
 
- README.MD
+As etapas estão muito genéricas e algumas não são indispensáveis para a compra do ingresso.
 
-A atividade tem como objetivo aplicar os conceitos de Pensamento Computacional a uma situação do cotidiano: a compra de ingressos online.
-Em vez de apenas descrever o processo, você deve analisar como ele acontece e organizá-lo de forma lógica, semelhante ao modo 
-como um computador executaria uma tarefa.
-Para isso, o problema é dividido em etapas menores (decomposição), são identificados procedimentos
-que se repetem (reconhecimento de padrões), são considerados apenas os elementos importantes para 
-a solução (abstração) e, por fim, é criada uma sequência organizada de ações (algoritmo) que representa todo o processo.
+Exemplos:
 
-Dessa forma, a atividade demonstra como o pensamento computacional pode ser utilizado para 
-compreender, organizar e resolver problemas presentes no dia a dia.
+"Acesso ao celular" e "Desbloqueio do aparelho" não fazem parte diretamente do processo de compra do ingresso. São ações preliminares do usuário.
+Nem toda compra exige "Cadastro de dados pessoais", pois o usuário pode já possuir uma conta cadastrada.
 
-ERROS_IDENTIFICADOS.MD
+Uma decomposição mais adequada seria:
 
-A aplicação do pensamento computacional permitiu transformar o processo de compra de ingressos online
-em uma sequência organizada de etapas, facilitando sua análise e representação.
-Por meio da decomposição, abstração, reconhecimento de padrões e elaboração de algoritmos, foi possível 
-compreender melhor o funcionamento do sistema e identificar como problemas do cotidiano podem ser modelados
-de maneira lógica e estruturada. Essa abordagem demonstra a importância do pensamento computacional
-na resolução de problemas e no desenvolvimento de soluções tecnológicas eficientes.
+Acessar a plataforma de venda.
+Fazer login ou cadastro.
+Selecionar o evento.
+Escolher quantidade e tipo de ingresso.
+Confirmar os dados da compra.
+Selecionar a forma de pagamento.
+Realizar o pagamento.
+Receber a confirmação.
+Acessar o ingresso digital.
+2. Problema na Lógica do Fluxo
 
-PROJETO_CORRIGIDO.MD
+Existe uma etapa importante ausente:
 
-As correções realizadas tiveram como objetivo adequar o projeto aos princípios do Pensamento Computacional, garantindo
-maior clareza, precisão e coerência na representação do processo de compra de ingressos online.
-Inicialmente, foram identificadas etapas que não contribuíam diretamente para a resolução do problema, como o acesso e desbloqueio
-do celular. Essas ações foram removidas por não fazerem parte do fluxo principal da compra, tornando a abstração mais adequada 
-ao focar apenas nos elementos essenciais.
+Após escolher o evento, normalmente o usuário precisa:
 
-Também foram adicionadas etapas importantes que estavam ausentes, como a escolha da quantidade de ingressos
-e a seleção de assentos ou setores, permitindo uma representação mais completa e próxima da realidade das plataformas 
-de venda de ingressos.
+Escolher setor/assento (quando disponível).
+Definir quantidade de ingressos.
 
-AVALIAÇÃO.MD
+Sem essas etapas, o algoritmo fica incompleto.
 
-A solução final apresentou melhorias significativas em relação à versão inicial, principalmente 
-na organização das etapas e na aplicação dos conceitos de Pensamento Computacional. A decomposição do processo 
-permitiu dividir a compra de ingressos online em ações menores e bem definidas, facilitando a compreensão do fluxo
-por parte do usuário e tornando o algoritmo mais fácil de analisar e implementar.
+3. Problema na Sequência de Pagamento
+
+A etapa:
+
+"Geração do código de pagamento"
+
+não ocorre em todos os casos.
+
+Por exemplo:
+
+Cartão de crédito → não gera código.
+PIX → gera QR Code ou chave.
+Carteira digital → pagamento direto.
+
+Logo, a abstração utilizada pode induzir a erro.
+
+Melhor descrição:
+
+"Escolha da forma de pagamento e geração das informações para pagamento."
+
+4. Falha na Abstração
+
+O texto afirma:
+
+"O projeto considera apenas as ações essenciais necessárias para concluir a compra do ingresso"
+
+Porém foram incluídas ações não essenciais:
+
+Acesso ao celular.
+Desbloqueio do aparelho.
+
+Isso contradiz o próprio conceito de abstração, que consiste em eliminar detalhes irrelevantes.
+
+5. Reconhecimento de Padrões Pouco Desenvolvido
+
+A seção cita:
+
+Plataformas de comércio eletrônico.
+Sistemas digitais de pagamento.
+Aplicativos de autenticação.
+
+Mas não explica quais padrões foram identificados.
+
+Seria melhor mencionar exemplos como:
+
+Login e autenticação de usuários.
+Carrinho de compras.
+Seleção de produtos/eventos.
+Processamento de pagamentos.
+Emissão de comprovantes digitais.
+6. Algoritmo Incompleto
+
+O algoritmo não prevê situações alternativas, por exemplo:
+
+Pagamento recusado.
+Falha na internet.
+Evento esgotado.
+Dados preenchidos incorretamente.
+
+Um algoritmo computacional normalmente considera condições e decisões.
