@@ -20,3 +20,22 @@ Por meio da decomposição, abstração, reconhecimento de padrões e elaboraç�
 compreender melhor o funcionamento do sistema e identificar como problemas do cotidiano podem ser modelados
 de maneira lógica e estruturada. Essa abordagem demonstra a importância do pensamento computacional
 na resolução de problemas e no desenvolvimento de soluções tecnológicas eficientes.
+
+PROJETO_CORRIGIDO.MD
+
+As correções realizadas tiveram como objetivo adequar o projeto aos princípios do Pensamento Computacional, garantindo
+maior clareza, precisão e coerência na representação do processo de compra de ingressos online.
+Inicialmente, foram identificadas etapas que não contribuíam diretamente para a resolução do problema, como o acesso e desbloqueio
+do celular. Essas ações foram removidas por não fazerem parte do fluxo principal da compra, tornando a abstração mais adequada 
+ao focar apenas nos elementos essenciais.
+
+Também foram adicionadas etapas importantes que estavam ausentes, como a escolha da quantidade de ingressos
+e a seleção de assentos ou setores, permitindo uma representação mais completa e próxima da realidade das plataformas 
+de venda de ingressos.
+
+AVALIAÇÃO.MD
+
+A solução final apresentou melhorias significativas em relação à versão inicial, principalmente 
+na organização das etapas e na aplicação dos conceitos de Pensamento Computacional. A decomposição do processo 
+permitiu dividir a compra de ingressos online em ações menores e bem definidas, facilitando a compreensão do fluxo
+por parte do usuário e tornando o algoritmo mais fácil de analisar e implementar.
